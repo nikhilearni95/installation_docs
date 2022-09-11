@@ -1,0 +1,45 @@
+TO KNOW WHICH OR WHETHER MYSQL is installed or not
+
+mysql
+
+which mysqld
+
+mysql --version
+
+****************************
+INSTALLATION
+
+apt install mysql-server
+
+*******************
+CHECK STATUS OF MYSQL
+
+systemctl status mysql
+(or)
+service mysql status
+
+******************
+CHECK VERSION
+
+mysql -version
+
+******************
+Set password for root user
+
+mysql_secure_installation
+
+select different options
+
+*******************
+CREATE USER
+
+CREATE USER 'nikhil.earni'@'35.167.132.162' IDENTIFIED BY 'Nikhil@314';
+
+GIVE PERMISSIONS	
+
+GRANT ALL PRIVILEGES ON *.* TO 'nikhil.earni'@'35.167.132.162' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES
+
+********************
+
